@@ -1,10 +1,17 @@
 {
-    "title":"Meekdai",
-    "displayTitle":"eekdai",
-    "subTitle":"童话是一种生活态度，仅此而已。",
-    "homeUrl":"https://blog.meekdai.com",
-    "avatarUrl":"https://meekdai.com/avatar.svg",
-    "faviconUrl":"https://meekdai.com/favicon.svg",
-    "singlePage":[],
-    "GMEEK_VERSION":"last"
+    "title":"MxLgv's blog",
+    "displayTitle":"MxLgv",
+    "subTitle":"Это мой блог, посвященный программированию, реверс-инжинирингу и этичному хакингy. / This is my blog dedicated to programming, reverse engineering and ethical hacking.",
+    "homeUrl":"https://mxlgv.github.io",
+    "avatarUrl":"https://avatars.githubusercontent.com/u/51446645?v=4",
+    "faviconUrl":"https://avatars.githubusercontent.com/u/51446645?v=4",
+    "singlePage":["link","about"],
+    "email":"maxlogaev@proton.me",
+    "startSite":"02/05/2024",
+    "commentLabelColor":"#006b75",
+    "yearColorList":["#bc4c00", "#0969da", "#1f883d", "#A333D0"],
+    "i18n":"EN",
+    "nightTheme":"dark_colorblind",
+    "bottomText":"Пожалуйста, указывайте источник при использовании этой статьи",
+    "GMEEK_VERSION": "177953ab74524ec5ab43216a28041cdd52b6b55e"
 }
