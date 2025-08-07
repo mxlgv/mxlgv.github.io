@@ -5,7 +5,7 @@ published: true
 
 ## Introduction
 
-Initially I wanted to buy [Game Boy Advance SP](https://ru.wikipedia.org/wiki/Game_Boy_Advance_SP), but after studying some details and looking at its price, I decided to look or a new portable console that can emulate it, which would be as similar to it as possible. I chose [ANBERNIC RG-34XXSP](https://anbernic.com/products/rg34xxsp).
+Initially I wanted to buy [Game Boy Advance SP](https://ru.wikipedia.org/wiki/Game_Boy_Advance_SP), but after studying some details and looking at its price, I decided to look for a new portable console that can emulate it, which would be as similar to it as possible. I chose [ANBERNIC RG-34XXSP](https://anbernic.com/products/rg34xxsp).
 
 During use, I encountered the fact that it is impossible to use Bluetooth headphones on the standard firmware. When trying to connect, I was simply thrown into the Bluetooth settings menu!
 
