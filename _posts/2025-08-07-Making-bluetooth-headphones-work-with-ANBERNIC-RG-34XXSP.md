@@ -1,15 +1,15 @@
 ---
-title: Making work bluetooth headphones with ANBERNIC RG-34XXSP
+title: Making bluetooth headphones work with ANBERNIC RG-34XXSP
 published: true
 ---
 
 ## Introduction
 
-Initially I wanted to buy [Game Boy Advance SP](https://ru.wikipedia.org/wiki/Game_Boy_Advance_SP), but after studying some details and looking at its price, I decided to look for a new portable with its emulator, which would be as similar to it as possible. My choice fell on [ANBERNIC RG-34XXSP](https://anbernic.com/products/rg34xxsp)
+Initially I wanted to buy [Game Boy Advance SP](https://ru.wikipedia.org/wiki/Game_Boy_Advance_SP), but after studying some details and looking at its price, I decided to look or a new portable console that can emulate it, which would be as similar to it as possible. I chose [ANBERNIC RG-34XXSP](https://anbernic.com/products/rg34xxsp).
 
 During use, I encountered the fact that it is impossible to use Bluetooth headphones on the standard firmware. When trying to connect, I was simply thrown into the Bluetooth settings menu!
 
-I have researched this issue and found some workaround. But this workaround will work ``ONLY for RetroArch`` other apps will still output audio to the built-in speaker
+I have researched this issue and found some workaround. But this workaround will work `ONLY for RetroArch` other apps will still output audio to the built-in speaker.
 
 | ![Game Boy Advance SP](./assets/anbernic-rg-34xxsp/gba-sp.jpg "Game Boy Advance SP") | ![ANBERNIC RG-34XXSP](./assets/anbernic-rg-34xxsp/anbernic.jpg "ANBERNIC RG-34XXSP") |
 | Game Boy Advance SP | ANBERNIC RG-34XXSP |
@@ -77,14 +77,14 @@ systemctl enable bluez-alsa
 systemctl start bluez-alsa
 ```
 
-Repeat all the same actions with the `bluetoothctl` utility as in the [Causes of bluetooth issue](#causes-of-bluetooth-issue) section. But this time the error should not appear.
+Now try the `bluetoothctl` utility again as described in the [Causes of bluetooth issue](#causes-of-bluetooth-issue) section. But this time the error should not appear.
 This should also work in the UI now.
 
 ## Adding a new sound device
 
 Now after a successful connection, you need to add a new device for alsa (unfortunately, the configuration for each new headphone will have to be entered manually, so far I have not found another way).
 
-Display available Bluetooth audio devices::
+Display available Bluetooth audio devices:
 ```bash
 bluealsa-aplay -L
 ```
@@ -141,4 +141,4 @@ After that, restart **RetroArch** and select your headphones in the settings. An
 
 - Sometimes when loading the device `bluez-alsa` the daemon terminates and the issue with Bluetooth appears again (the reason is not clear yet, it can be fixed by rebooting);
 - In **RetroArch** `alsa` device is not saved on restart (seems to be a **ANBERNIC** or **RetroArch** issue);
-- Headphones won't automatically connect to portable (**ANBERNIC** issue).
+- Headphones won't automatically connect to portable console (**ANBERNIC** issue).
